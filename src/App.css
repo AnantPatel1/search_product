@@ -6,7 +6,17 @@
   height: 40vmin;
   pointer-events: none;
 }
+.fa {
+  margin-right: 2px;
+}
 
+.checked {
+  color: #fdd64b;
+}
+
+.unchecked {
+  color: #d8d7d4;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
