@@ -1,64 +1,61 @@
-import React from 'react'
-import './getRatingsUI.css'
+import React from "react";
+import styles from "./getRatingsUI.module.css";
 
 interface GetRatingsUIProps {
-    Rating : number
+  Rating: number;
 }
 
-export const GetRatingsUI: React.FC<GetRatingsUIProps> = ({Rating}) => {
-    if (Rating === 5) {
-        return (
-            <span className="Stars">
-                <span className="fa fa-star checked"></span>
-                <span className="fa fa-star checked"></span>
-                <span className="fa fa-star checked"></span>
-                <span className="fa fa-star checked"></span>
-                <span className="fa fa-star checked"></span>
-            </span>
-        )
-    }
-    if (Rating === 4) {
-        return (
-            <span className="Stars">
-                <span className="fa fa-star checked"></span>
-                <span className="fa fa-star checked"></span>
-                <span className="fa fa-star checked"></span>
-                <span className="fa fa-star checked"></span>
-                <span className="fa fa-star unchecked"></span>
-            </span>
-        )
-    }
-    else if (Rating === 3) {
-        return (
-            <span className="Stars">
-                <span className="fa fa-star checked"></span>
-                <span className="fa fa-star checked"></span>
-                <span className="fa fa-star checked"></span>
-                <span className="fa fa-star unchecked"></span>
-                <span className="fa fa-star unchecked"></span>
-            </span>
-        )
-    }
-    else if (Rating === 2) {
-        return (
-            <span className="Stars">
-                <span className="fa fa-star checked"></span>
-                <span className="fa fa-star checked"></span>
-                <span className="fa fa-star unchecked"></span>
-                <span className="fa fa-star unchecked"></span>
-                <span className="fa fa-star unchecked"></span>
-            </span>
-        )
-    }
-    else {
-        return (
-            <span className="Stars">
-                <span className="fa fa-star checked"></span>
-                <span className="fa fa-star unchecked"></span>
-                <span className="fa fa-star unchecked"></span>
-                <span className="fa fa-star unchecked"></span>
-                <span className="fa fa-star unchecked"></span>
-            </span>
-        )
-    }
-}
+export const GetRatingsUI: React.FC<GetRatingsUIProps> = ({ Rating }) => {
+  if (Rating === 5) {
+    return (
+      <span className={styles.Stars}>
+        <span className="fa fa-star checked"></span>
+        <span className="fa fa-star checked"></span>
+        <span className="fa fa-star checked"></span>
+        <span className="fa fa-star checked"></span>
+        <span className="fa fa-star checked"></span>
+      </span>
+    );
+  }
+  if (Rating === 4) {
+    return (
+      <span className={styles.Stars}>
+        <span className="fa fa-star checked"></span>
+        <span className="fa fa-star checked"></span>
+        <span className="fa fa-star checked"></span>
+        <span className="fa fa-star checked"></span>
+        <span className="fa fa-star unchecked"></span>
+      </span>
+    );
+  } else if (Rating === 3) {
+    return (
+      <span className={styles.Stars}>
+        <span className="fa fa-star checked"></span>
+        <span className="fa fa-star checked"></span>
+        <span className="fa fa-star checked"></span>
+        <span className="fa fa-star unchecked"></span>
+        <span className="fa fa-star unchecked"></span>
+      </span>
+    );
+  } else if (Rating === 2) {
+    return (
+      <span className={styles.Stars}>
+        <span className="fa fa-star checked"></span>
+        <span className="fa fa-star checked"></span>
+        <span className="fa fa-star unchecked"></span>
+        <span className="fa fa-star unchecked"></span>
+        <span className="fa fa-star unchecked"></span>
+      </span>
+    );
+  } else {
+    return (
+      <span className={styles.Stars}>
+        <span className="fa fa-star checked"></span>
+        <span className="fa fa-star unchecked"></span>
+        <span className="fa fa-star unchecked"></span>
+        <span className="fa fa-star unchecked"></span>
+        <span className="fa fa-star unchecked"></span>
+      </span>
+    );
+  }
+};
