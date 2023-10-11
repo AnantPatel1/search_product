@@ -6,56 +6,13 @@ interface GetRatingsUIProps {
 }
 
 export const GetRatingsUI: React.FC<GetRatingsUIProps> = ({ Rating }) => {
-  if (Rating === 5) {
-    return (
-      <span className={styles.Stars}>
-        <span className="fa fa-star checked"></span>
-        <span className="fa fa-star checked"></span>
-        <span className="fa fa-star checked"></span>
-        <span className="fa fa-star checked"></span>
-        <span className="fa fa-star checked"></span>
-      </span>
-    );
+  const starComponents = [];
+
+  for (let i = 1; i <= 5; i++) {
+    const starClassName =
+      i <= Rating ? "fa fa-star checked" : "fa fa-star unchecked";
+    starComponents.push(<span key={i} className={starClassName}></span>);
   }
-  if (Rating === 4) {
-    return (
-      <span className={styles.Stars}>
-        <span className="fa fa-star checked"></span>
-        <span className="fa fa-star checked"></span>
-        <span className="fa fa-star checked"></span>
-        <span className="fa fa-star checked"></span>
-        <span className="fa fa-star unchecked"></span>
-      </span>
-    );
-  } else if (Rating === 3) {
-    return (
-      <span className={styles.Stars}>
-        <span className="fa fa-star checked"></span>
-        <span className="fa fa-star checked"></span>
-        <span className="fa fa-star checked"></span>
-        <span className="fa fa-star unchecked"></span>
-        <span className="fa fa-star unchecked"></span>
-      </span>
-    );
-  } else if (Rating === 2) {
-    return (
-      <span className={styles.Stars}>
-        <span className="fa fa-star checked"></span>
-        <span className="fa fa-star checked"></span>
-        <span className="fa fa-star unchecked"></span>
-        <span className="fa fa-star unchecked"></span>
-        <span className="fa fa-star unchecked"></span>
-      </span>
-    );
-  } else {
-    return (
-      <span className={styles.Stars}>
-        <span className="fa fa-star checked"></span>
-        <span className="fa fa-star unchecked"></span>
-        <span className="fa fa-star unchecked"></span>
-        <span className="fa fa-star unchecked"></span>
-        <span className="fa fa-star unchecked"></span>
-      </span>
-    );
-  }
+
+  return <span className={styles.Stars}>{starComponents}</span>;
 };
