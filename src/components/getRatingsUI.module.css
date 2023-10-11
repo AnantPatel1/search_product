@@ -1,11 +1,14 @@
 .fa {
-    margin-right: 2px;
+  margin-right: 2px;
 }
 
 .checked {
-    color: #fdd64b;
+  color: #fdd64b;
 }
 
 .unchecked {
-    color: #d8d7d4;
+  color: #d8d7d4;
+}
+.Stars .fa-star {
+  color: yellow;
 }

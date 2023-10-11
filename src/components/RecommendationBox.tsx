@@ -13,7 +13,7 @@ export const RecommendationBox: React.FC<RecommendationBoxProps> = () => {
           <div className={styles.Trend}>
             <img
               className={styles.TrendImg}
-              src={faker.image.fashion(90, 122, true)}
+              src={faker.image.sports(90, 122, true)}
               alt=""
             />
             <div className={styles.TrendName}>
@@ -23,7 +23,7 @@ export const RecommendationBox: React.FC<RecommendationBoxProps> = () => {
           <div className="Trend">
             <img
               className={styles.TrendImg}
-              src={faker.image.fashion(90, 122, true)}
+              src={faker.image.sports(90, 122, true)}
               alt=""
             />
             <div className={styles.TrendName}>
@@ -33,7 +33,7 @@ export const RecommendationBox: React.FC<RecommendationBoxProps> = () => {
           <div className="Trend">
             <img
               className={styles.TrendImg}
-              src={faker.image.fashion(90, 122, true)}
+              src={faker.image.sports(90, 122, true)}
               alt=""
             />
             <div className={styles.TrendName}>
@@ -43,7 +43,7 @@ export const RecommendationBox: React.FC<RecommendationBoxProps> = () => {
           <div className="Trend">
             <img
               className={styles.TrendImg}
-              src={faker.image.fashion(90, 122, true)}
+              src={faker.image.sports(90, 122, true)}
               alt=""
             />
             <div className={styles.TrendName}>
@@ -53,7 +53,7 @@ export const RecommendationBox: React.FC<RecommendationBoxProps> = () => {
           <div className="Trend">
             <img
               className={styles.TrendImg}
-              src={faker.image.fashion(90, 122, true)}
+              src={faker.image.sports(90, 122, true)}
               alt=""
             />
             <div className={styles.TrendName}>
