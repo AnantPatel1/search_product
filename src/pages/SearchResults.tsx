@@ -60,9 +60,9 @@ export const SearchResults: React.FC<SearchResultsProps> = () => {
                   id="Mango"
                   type="radio"
                   name="brand"
-                  value="Mango"
+                  value="Boots"
                 />
-                <label htmlFor="Mango">Mango</label>
+                <label htmlFor="Boots">Boot</label>
               </div>
               <div className={styles.FilterOption}>
                 <input
@@ -71,9 +71,9 @@ export const SearchResults: React.FC<SearchResultsProps> = () => {
                   id="H&M"
                   type="radio"
                   name="brand"
-                  value="H&M"
+                  value="Football"
                 />
-                <label htmlFor="H&M">H&M</label>
+                <label htmlFor="Football">Football</label>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ export const SearchResults: React.FC<SearchResultsProps> = () => {
                   name="price"
                   value="500"
                 />
-                <label htmlFor="price500">Under 500</label>
+                <label htmlFor="price500">Under ₹500</label>
               </div>
               <div className={styles.FilterOption}>
                 <input
@@ -107,7 +107,7 @@ export const SearchResults: React.FC<SearchResultsProps> = () => {
                   name="price"
                   value="1000"
                 />
-                <label htmlFor="price1000">500 to 1000</label>
+                <label htmlFor="price1000">₹500 to ₹1000</label>
               </div>
             </div>
           </div>
