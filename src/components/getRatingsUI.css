@@ -1,0 +1,11 @@
+.fa {
+    margin-right: 2px;
+}
+
+.checked {
+    color: #fdd64b;
+}
+
+.unchecked {
+    color: #d8d7d4;
+}

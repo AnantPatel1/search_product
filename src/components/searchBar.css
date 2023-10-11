@@ -1,0 +1,64 @@
+.SearchBar {
+    max-width: 450px;
+    max-height: 18px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.searchHome {
+    width: 450px;
+    height: 18px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #bcbcbc;
+}
+
+.searchHome:focus {
+    outline: none;
+}
+
+.search {
+    width: 350px;
+    height: 10px;
+    padding: 15px 20px;
+    border: none;
+    outline: #bcbcbc solid 1px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #bcbcbc;
+}
+
+.searchButton {
+    align-self: flex-end;
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.searchButton :hover {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #f5f4f4;
+}
+
+.searchIcon {
+    height: 30px;
+    width: 30px;
+}
+
+.searchIconHome {
+    height: 37px;
+    width: 37px;
+}
+
+@media screen and (max-width: 500px){
+    .SearchBar {
+        max-width: 300px;
+    }
+  }

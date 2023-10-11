@@ -1,0 +1,111 @@
+.Product {
+    width : 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+
+.ProductImgWrapper {
+    position: relative;
+}
+
+.ProductImg {
+    width : 180px;
+    height : 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.ProductImg:hover {
+    cursor: pointer;
+}
+
+.Wishlist {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    max-height: 35px;
+    max-width: 35px;
+}
+
+.WishlistIcon {
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+}
+
+.WishlistIcon:hover {
+    cursor: pointer;
+}
+
+.ViewProduct {
+    width: 180px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    background-color: rgba(118,140,255,0.7);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ViewProduct:hover {
+    cursor: pointer;
+}
+
+.ViewText {
+    font-size: 16px;
+}
+
+.ViewText:hover {
+    cursor: pointer;
+}
+
+.ProductName {
+    padding: 3px 0;
+    font-weight: 500;
+}
+
+.ProductName:Hover {
+    cursor: pointer;
+}
+
+.ProductPrice {
+    padding-bottom: 3px;
+}
+
+.OriginalPrice {
+    color: #bcbcbc;
+    text-decoration: line-through;
+}
+
+.DiscountedPrice {
+    color: #768cff;
+}
+
+@media screen and (max-width: 500px){
+    .Product {
+        width: 50%;
+        align-items: center;
+    }
+
+    .ProductImg {
+        width: 130px;
+        height: 180.55px;
+    }
+
+    .ViewProduct {
+        width: 130px;
+        height: 30px;
+    }
+
+    .ViewText {
+        font-size: 15px;
+    }
+}
