@@ -42,8 +42,6 @@ export const SearchResults: React.FC<SearchResultsProps> = () => {
       <div className={styles.SearchResultsHeader}>Search Results</div>
       <div className={styles.Container}>
         <div className={styles.Filters}>
-          {/* Brand Filter */}
-          {/* Replace "All" with your brand options */}
           <div className={styles.Filter}>
             <div className={styles.FilterHeader}>
               <span className={styles.FilterName}>BRAND</span>
@@ -70,7 +68,6 @@ export const SearchResults: React.FC<SearchResultsProps> = () => {
             </div>
           </div>
 
-          {/* Price Range Filter */}
           <div className={styles.Filter}>
             <div className={styles.FilterHeader}>
               <span className={styles.FilterName}>PRICE RANGE</span>
@@ -101,7 +98,6 @@ export const SearchResults: React.FC<SearchResultsProps> = () => {
             </div>
           </div>
 
-          {/* Ratings Filter */}
           <div className={styles.Filter}>
             <div className={styles.FilterHeader}>
               <span className={styles.FilterName}>RATINGS</span>
